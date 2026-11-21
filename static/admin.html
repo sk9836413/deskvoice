@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DeskVoice · IT admin</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="bar">
+    <div class="brand"><span class="dot"></span>DeskVoice <span class="sub">IT admin</span></div>
+    <div class="bar-right">
+      <button id="refresh" class="ghost">Refresh</button>
+      <a href="/" class="link">← Employee app</a>
+    </div>
+  </header>
+
+  <main class="admin">
+    <section class="kpis" id="kpis"></section>
+
+    <section class="panel">
+      <h2>Tickets</h2>
+      <p class="muted">Tickets DeskVoice created. Resolving one turns the fix into a draft knowledge article.</p>
+      <div id="tickets"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Draft knowledge articles</h2>
+      <p class="muted">Approved drafts become searchable, so the agent can answer the same issue next time.</p>
+      <div id="drafts"></div>
+    </section>
+  </main>
+  <script src="/static/admin.js"></script>
+</body>
+</html>

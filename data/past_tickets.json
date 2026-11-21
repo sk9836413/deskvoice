@@ -1,0 +1,8 @@
+[
+  {"id": "TKT-0901", "summary": "Outlook stuck on loading profile after Windows update", "category": "Messaging", "resolution": "Disabled a faulty PDF add-in via outlook.exe /safe, then restarted Outlook normally."},
+  {"id": "TKT-0907", "summary": "VPN drops every 5 minutes on home Wi-Fi", "category": "Network", "resolution": "Old VPN client version. Updated the client from the software portal and the connection stayed stable."},
+  {"id": "TKT-0912", "summary": "Teams camera not detected in meetings", "category": "Applications", "resolution": "Camera privacy setting was off in Windows. Allowed camera access for desktop apps."},
+  {"id": "TKT-0918", "summary": "Printer on 3rd floor shows offline", "category": "End-user Devices", "resolution": "Print spooler stuck. Cleared the queue and re-added the printer from the company list."},
+  {"id": "TKT-0923", "summary": "Outlook keeps asking for password after password change", "category": "Messaging", "resolution": "Removed old MicrosoftOffice entries from Credential Manager and signed in again."},
+  {"id": "TKT-0931", "summary": "OneDrive sync pending for project folder", "category": "Applications", "resolution": "File path was longer than allowed. Shortened folder names and sync resumed."}
+]

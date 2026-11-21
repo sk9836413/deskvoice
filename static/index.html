@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DeskVoice · IT help by voice</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="bar">
+    <div class="brand"><span class="dot"></span>DeskVoice</div>
+    <div class="bar-right">
+      <span id="mode" class="badge">…</span>
+      <a href="/admin" class="link">IT admin →</a>
+    </div>
+  </header>
+
+  <main class="chat-wrap">
+    <section class="setup">
+      <label>Your name <input id="name" maxlength="60" placeholder="e.g. Priya" /></label>
+      <label>Language
+        <select id="lang">
+          <option value="en-IN">English</option>
+          <option value="hi-IN">Hindi</option>
+          <option value="en-IN|hinglish">Hinglish</option>
+        </select>
+      </label>
+      <label class="check"><input type="checkbox" id="speak" checked /> Speak replies</label>
+    </section>
+
+    <section id="log" class="log" aria-live="polite">
+      <div class="msg bot">
+        <div class="bubble">Hi! Tell me what's wrong with your laptop, email, VPN or access. Tap the mic and just speak, in English, Hindi or Hinglish.</div>
+      </div>
+    </section>
+
+    <section class="chips" id="chips">
+      <button>Outlook is stuck on loading profile</button>
+      <button>VPN keeps disconnecting</button>
+      <button>I forgot my password</button>
+      <button>Mujhe finance drive ka access chahiye</button>
+      <button>What's the status of my ticket?</button>
+    </section>
+
+    <form id="composer" class="composer">
+      <button type="button" id="mic" class="mic" title="Tap to speak" aria-label="Tap to speak">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-2.08A7 7 0 0 0 19 12h-2Z"/></svg>
+      </button>
+      <input id="text" autocomplete="off" maxlength="1000" placeholder="Speak, or type your IT problem…" />
+      <button type="submit" class="send">Send</button>
+    </form>
+    <p id="voiceNote" class="note"></p>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
