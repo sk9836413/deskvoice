@@ -33,7 +33,7 @@ async function loadMetrics() {
     kpi("Conversations", String(m.conversations)),
     kpi("Solved without a human", m.self_resolution_rate == null ? "–" : `${m.self_resolution_rate}%`,
         "fixed by the agent or a self-service workflow"),
-    kpi("Time to first answer", m.avg_first_answer_ms == null ? "–" : `${m.avg_first_answer_ms} ms`, "server time"),
+    kpi("Time to first answer", m.avg_first_answer_ms == null ? "–" : m.avg_first_answer_ms < 1 ? "<1 ms" : `${m.avg_first_answer_ms} ms`, "server time"),
     kpi("Tickets created", String(m.tickets_created), `${m.open_tickets} open`),
   );
   if (m.top_categories.length) {

@@ -1,8 +1,9 @@
 # DeskVoice
 
 **A voice IT helpdesk agent that answers, acts and learns.**
-Prototype for the *Build with Google Gemini* hackathon, problem statement:
-*Voice-Powered Enterprise Knowledge & Decision Agent*. Team **SKA**.
+Prototype by team **SKA** (Suraj Kumar, Prathmesh Purushottam Deore), built for the *Build with Google Gemini*
+hackathon (problem statement: *Voice-Powered Enterprise Knowledge & Decision Agent*) and entered in **BUILD 2036**
+(frontier: *Applied AI & Agentic Intelligence*).
 
 Employees speak their IT problem in English, Hindi or Hinglish. DeskVoice searches the company's IT
 knowledge and past tickets, replies by voice with step-by-step fixes and shows the source. If the fix
@@ -23,7 +24,7 @@ Every resolved ticket becomes a draft knowledge article that IT can approve, so 
 | Confirmation before every action | `DeskVoice.handle()` | Enforced in code, not by the model |
 | IT admin dashboard, resolve ticket → draft article → approve | `static/admin.*`, `/api/admin/*` | Works |
 | ADK agent for Agent Runtime / Gemini Enterprise | `deskvoice_adk/agent.py` | Loads; run with `adk web` |
-| Tests | `tests/` | 11 passing |
+| Tests | `tests/` | 12 passing |
 
 ### How it maps to Gemini Enterprise
 
